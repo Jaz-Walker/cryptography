@@ -27,3 +27,21 @@ def rowYourBoat():
 
 rowYourBoat()
 
+# Indexing
+
+name = "Roy G Biv"
+firstCharacter = name[0] # the brackets allow us to grab certain characters, in this the letter in position 0 (position 0 is the first position)
+print(firstCharacter)
+
+
+middleCharacterIndex = len(name) // 2 # we use this to find the length of out string
+print(middleCharacterIndex)
+print(name[middleCharacterIndex])
+
+
+print(name[-1])
+
+for i in range(1, len(name)):
+    print(name[i])
+
+# Slicing and dicing
