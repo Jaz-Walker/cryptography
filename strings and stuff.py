@@ -45,3 +45,14 @@ for i in range(1, len(name)):
     print(name[i])
 
 # Slicing and dicing
+
+
+print(name[0:3])
+
+for i in range(0, len(name)+1):
+    print(name[0:i])
+
+
+# searching
+
+print("Biv" in name)
