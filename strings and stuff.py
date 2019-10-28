@@ -56,3 +56,31 @@ for i in range(0, len(name)+1):
 # searching
 
 print("Biv" in name)
+
+
+# character functions
+
+print(ord('a'))
+
+print(chr(69))
+
+def letterToIndex(letter):
+    from string import ascii_lowercase
+    alphabet = ascii_lowercase + ' '
+    idx = alphabet.find(letter)
+    if idx == -1:
+        print("error", letter, "is not in the alphabet")
+    return idx
+
+def indexToLetter(idx):
+    from string import ascii_lowercase
+    alphabet = ascii_lowercase + ' '
+    letter = ''
+    if idx >= len(alphabet):
+        print("error:", idx, "it is too large.")
+    elif idx < 0:
+        print("error:", idx, "it too small")
+    else:
+        letter = alphabet[idx]
+    return letter
+
